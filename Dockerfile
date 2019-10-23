@@ -5,7 +5,7 @@ RUN apt-get update \
     && pip install --upgrade pip \
     && apt-get -q -y clean 
 
-ENV TZ=America/Sao_Paulo
+ENV TZ=America/Argentina/Buenos_Aires
 RUN rm -vf /etc/localtime \
     && ln -snf /usr/share/zoneinfo/$TZ /etc/localtime  \
     && echo $TZ > /etc/timezone
