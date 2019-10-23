@@ -1,10 +1,12 @@
 #!/bin/bash
 set -e
 
+
 APP_SCRIPT=${APP_SCRIPT:-application.py}
 APP_REQUIREMENTS=${APP_REQUIREMENTS:-requirements.txt}
 APP_PORT=${APP_PORT:-8080}
 CURRENT_DIR=$(pwd)
+
 
 echo "Current directory: " $CURRENT_DIR
 echo "Application script: " $APP_SCRIPT
