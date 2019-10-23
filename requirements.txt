@@ -17,7 +17,7 @@ django==1.7
 djangorestframework==2.4.3
 six==1.8.0
 python-dateutil==2.2
-psycopg2==2.5.4
+psycopg2==2.8.3
 pypgwrap==0.1.13
 django-dbarray==0.2
 gevent==1.1.0
