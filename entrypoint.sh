@@ -22,5 +22,8 @@ if ! [ -z "$SOMAXCONN" ]; then
     sysctl -w net.core.somaxconn=$SOMAXCONN
 fi
 
+echo "Preparing environment..."
+pip install --upgrade -r $APP_REQUIREMENTS
+
 echo "Starting application..."
 exec "$@"
